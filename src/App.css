@@ -1,0 +1,146 @@
+/* 
+Purpose: Provides styling for the entire application including
+background, text, table layout, and responsiveness.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 
+Background styling:
+Creates a dark blue gradient across the page
+*/
+.app-background {
+  background: linear-gradient(to right, #0a1f44, #163a70);
+  min-height: 100vh;
+}
+
+/* 
+Main title styling:
+Ensures visibility on dark background
+*/
+h1 {
+  color: #ffffff;
+}
+
+/* 
+General paragraph text:
+Lightened for readability on dark background
+*/
+p {
+  color: #d6e4ff;
+}
+
+/* 
+Subtitle text (search description):
+Custom color for better contrast than Bootstrap's text-muted
+*/
+.subtitle-text {
+  color: #c9dcff;
+  font-size: 1.05rem;
+}
+
+/* 
+Search input styling:
+Light background for contrast against dark theme
+*/
+input.form-control {
+  background-color: #f1f6ff;
+  border: none;
+}
+
+/* 
+Table wrapper:
+Centers table and limits max width for better layout control
+*/
+.table-wrapper {
+  max-width: 1400px;
+}
+
+/* 
+Main table styling:
+- White background for contrast
+- Rounded corners
+- Fixed layout prevents uneven spacing
+*/
+.pet-table {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* 
+Table header styling:
+Custom blue tone for header row
+*/
+.pet-table thead {
+  background-color: #aebfdb;
+  color: #000000;
+}
+
+/* 
+Table row default styling:
+Light gray background for readability
+*/
+.pet-table tbody tr {
+  background-color: #f3f3f3;
+}
+
+/* 
+Row hover effect:
+Highlights row when user hovers over it
+*/
+.pet-table tbody tr:hover {
+  background-color: #dbe9ff;
+}
+
+/* 
+Pet image styling:
+Uniform size and cropping for consistency
+*/
+.pet-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* 
+Column width definitions:
+Ensures balanced spacing across table
+*/
+.image-col {
+  width: 190px;
+}
+
+.name-col {
+  width: 250px;
+  font-size: 1.1rem;
+}
+
+.animal-col {
+  width: 180px;
+  font-size: 1.1rem;
+}
+
+/* 
+Specialty column:
+Expands to fill remaining space
+*/
+.specialty-col {
+  width: auto;
+  font-size: 1.15rem;
+  word-wrap: break-word;
+}
+
+/* 
+Error / no results message:
+Adjusted color for visibility on dark theme
+*/
+.text-danger {
+  color: #ffb3b3 !important;
+}
